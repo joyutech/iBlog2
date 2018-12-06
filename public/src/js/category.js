@@ -309,25 +309,6 @@ $(function () {
         }
     });
 
-    $("#qrBtn").on("click", function () {
-        if ($("#ss_toggle").hasClass("close")) {
-            $("#share-menu").css("transition", "none");
-            $("#ss_toggle").click();
-        }
-        if ($(".qrcontain").is(":hidden")) {
-            $(".qrcontain").removeClass("fadeOutLeft").addClass("fadeInLeft");
-            $(".qrcontain").show();
-            $("#qrBtn").addClass("opened");
-        } else {
-            $(".qrcontain").removeClass("fadeInLeft").addClass("fadeOutLeft");
-            $(".qrcontain").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function () {
-                $(".qrcontain").hide();
-            });
-            $("#qrBtn").removeClass("opened");
-        }
-        $("#share-menu").css("transition", "all 1s ease 0s");
-    });
-
     $("#scrollTop a").on("click", function () {
         $("html,body").animate({scrollTop: 0}, 1000);
     });
