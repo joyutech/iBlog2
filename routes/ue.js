@@ -146,6 +146,9 @@ router.get('/', (req, res, next) => {
                 size: parseInt(req.query.size)
             });
             break;
+
+        default:
+            next();
     }
 });
 
@@ -227,6 +230,9 @@ router.post('/', (req, res, next) => {
                 }
             });
             break;
+
+        default:
+            next();
     }
 });
 

@@ -26,7 +26,7 @@ router.get('/', (req, res, next) => {
         } else {
             res.render('admin/index', {
                 settings,
-                title: `${settings.SiteName} - ${res.__('layoutAdmin.web_statistic')}`
+                title: `${settings.SiteName}}`
             });
         }
     });
@@ -554,8 +554,6 @@ router.post('/saveSettings', (req, res, next) => {
         Editor: req.body.Editor,
         CacheExpired: req.body.CacheExpired,
         TranslateKey: req.body.TranslateKey,
-        EnableStatistics: req.body.EnableStatistics,
-        StatisticsId: req.body.StatisticsId,
         EnableShare: req.body.EnableShare,
         JiaThisId: req.body.JiaThisId,
         ShowComments: req.body.ShowComments,
