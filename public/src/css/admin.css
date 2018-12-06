@@ -194,7 +194,7 @@ h5 {
 }
 
 .nav-header {
-    padding: 33px 25px 20px;
+    padding: 15px 15px;
     background: url("/static/images/header-profile.png") no-repeat;
 }
 
@@ -220,14 +220,24 @@ h5 {
 }
 
 .nav-header img.img-lg {
-    width: 60px;
-    height: 60px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
     margin-bottom: 10px;
 }
 
+.nav-header h1.title-lg {
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+
 .nav-header img.img-sm {
-    width: 40px;
-    height: 40px;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .nav-header .text-muted {
@@ -279,7 +289,7 @@ h5 {
 }
 
 .fa.arrow:before {
-    content: "\f104";
+    content: "\f105";
 }
 
 .active > a > .fa.arrow:before {
@@ -378,7 +388,7 @@ body.mini-navbar .navbar-default .nav > li > .nav-second-level li a {
     font-weight: 600;
     color: white;
     display: none;
-    padding: 18px 0;
+    padding: 18px 5px;
 }
 
 .pace-done .navbar-static-side,
@@ -6777,7 +6787,7 @@ body.body-small .vote-icon {
 }
 
 .metismenu .fa.arrow:before {
-    content: "\f104";
+    content: "\f105";
 }
 
 .metismenu .active > a > .fa.arrow:before {
