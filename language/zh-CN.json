@@ -14,7 +14,6 @@
 	"layoutAdmin": {
 		"title": "后台管理",
 		"blog_management": "博客管理",
-		"web_statistic": "网站统计",
 		"classified_management": "分类管理",
 		"article_management": "文章管理",
 		"new_article": "新的文章",
@@ -140,9 +139,6 @@
 		"guestbook": {
 			"message_manage": "留言管理"
 		},
-		"index": {
-			"analysis": "网站统计"
-		},
 		"newarticle": {
 			"new": "新的文章",
 			"title": "标题",
@@ -188,10 +184,6 @@
 			"analysis_service": "百度统计",
 			"analysis_id": "百度统计id",
 			"analysis_id_placeholder": "申请的统计id",
-			"share": "启用分享功能",
-			"share_service": "JisThis",
-			"share_id": "JiaThis分享id",
-			"share_id_placeholder": "申请的分享id",
 			"comments": "显示文章评论",
 			"comments_service": "畅言",
 			"comments_id": "畅言appid",

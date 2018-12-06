@@ -76,17 +76,21 @@ app.use(passport.session());
 app.use('/static', express.static(path.join(__dirname, 'public')));
 app.use('/nodeModules', express.static(path.join(__dirname, 'node_modules')));
 
-// 前台站点路由，无需登录
+// 登陆路由
+app.use('/', auth);
+
+// 除登陆路由外，其他都需要身份验证
+// app.use('/', require('connect-ensure-login').ensureLoggedIn('/login'));
+
+// 前台站点路由
 app.use('/', route);
 app.use('/', locale);
 app.use('/', misc);
-app.use('/', auth);
 app.use('/blog', blog);
 app.use('/ue/controller', ue);
 
-// 后台站点路由，需要身份验证
-app.use('/admin', require('connect-ensure-login')
-    .ensureLoggedIn('/login'), admin);
+// 后台站点路由
+app.use('/admin', admin);
 
 // 捕获 404
 app.use((req, res) => {

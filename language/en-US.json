@@ -14,7 +14,6 @@
 	"layoutAdmin": {
 		"title": "Dashboard",
 		"blog_management": "Blogs",
-		"web_statistic": "Analysis",
 		"classified_management": "Category",
 		"article_management": "Posts",
 		"new_article": "New Post",
@@ -140,9 +139,6 @@
 		"guestbook": {
 			"message_manage": "Message Manage"
 		},
-		"index": {
-			"analysis": "Analysis"
-		},
 		"newarticle": {
 			"new": "New Post",
 			"title": "Title",
@@ -187,10 +183,6 @@
 			"analysis_service": "Baidu Analysis",
 			"analysis_id": "Baidu Analysis ID",
 			"analysis_id_placeholder": "Apply Baidu Analysis ID",
-			"share": "Use Share Fucntions",
-			"share_service": "JisThis",
-			"share_id": "JiaThis id",
-			"share_id_placeholder": "Apply JiaThis ID",
 			"comments": "Show Comments To All",
 			"comments_service": "畅言",
 			"comments_id": "畅言appid",
