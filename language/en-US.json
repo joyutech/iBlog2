@@ -49,9 +49,7 @@
 	},
 	"top": {
 		"share": "Share",
-		"qr_code": "QR Code",
-		"back_to_top": "Back To Top",
-		"small_screen": "Small Screen Mode"
+		"back_to_top": "Back To Top"
 	},
 	"about": {
 		"github": "Github",

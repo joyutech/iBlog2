@@ -49,9 +49,7 @@
 	},
 	"top": {
 		"share": "分享到",
-		"qr_code": "二维码",
-		"back_to_top": "回顶部",
-		"small_screen": "手机访问该页面"
+		"back_to_top": "回顶部"
 	},
 	"about": {
 		"github": "Github",
