@@ -58,13 +58,3 @@ html(lang='zh-CN')
                                 i.fa.fa-language.fa-fw
                                 |  #{__("language")}
         block content
-        if(settings.EnableStatistics === 'true')
-            // 百度统计代码
-            script.
-                var _hmt = _hmt || [];
-                (function () {
-                    var hm = document.createElement("script");
-                    hm.src = '//hm.baidu.com/hm.js?#{settings.StatisticsId}';
-                    var s = document.getElementsByTagName("script")[0];
-                    s.parentNode.insertBefore(hm, s);
-                })();

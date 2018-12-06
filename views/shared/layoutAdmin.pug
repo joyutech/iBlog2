@@ -18,15 +18,11 @@ html(lang='zh-CN')
 							.dropdown.profile-element
 								span
 									a(href='/', target='_blank')
-										img.img-circle.img-lg(alt='image', src=settings.LogoPath)
+										img.img-lg(alt='image', src=settings.LogoPath)
 								a(href='/admin')
-									h4=__("layoutAdmin.title")
+									h1.title-lg=__("layoutAdmin.title")
 							.logo-element
-								img.img-circle.img-sm(alt='image', src=settings.LogoPath)
-						li
-							a(href='/admin')
-								i.fa.fa-chart-bar
-								span.nav-label=__("layoutAdmin.web_statistic")
+								img.img-sm(alt='image', src=settings.LogoPath)
 						li
 							a(href='#')
 								i.fa.fa-file-alt
