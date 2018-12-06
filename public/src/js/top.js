@@ -34,42 +34,6 @@ $(function () {
         });
     }
 
-    if (shows.indexOf(1) >= 0) {
-        $('ul.fixed-tool li.qr-li').show();
-        $("#qrBtn").on("click", function () {
-            if ($("#ss_toggle").hasClass("close")) {
-                $("#share-menu").css("transition", "none");
-                $("#ss_toggle").click();
-            }
-            if ($(".qrcontain").is(":hidden")) {
-                $(".qrcontain").removeClass("fadeOutLeft").addClass("fadeInLeft");
-                $(".qrcontain").show();
-                $("#qrBtn").addClass("opened");
-            } else {
-                $(".qrcontain").removeClass("fadeInLeft").addClass("fadeOutLeft");
-                $(".qrcontain").one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function () {
-                    $(".qrcontain").hide();
-                });
-                $("#qrBtn").removeClass("opened");
-            }
-            $("#share-menu").css("transition", "all 1s ease 0s");
-        });
-
-        img = document.createElement("img");
-        img.src = logoPath;
-        img.onload = function () {
-            $("#qrcode").qrcode({
-                text: window.location.href,
-                size: "100",
-                ecLevel: 'H',
-                minVersion: 4,
-                mode: 4,
-                image: img,
-                mSize: 0.3
-            });
-        };
-    }
-
     if (shows.indexOf(2) >= 0) {
         $('ul.fixed-tool li.top-li').show();
         $(window).scroll(function () {
