@@ -554,8 +554,6 @@ router.post('/saveSettings', (req, res, next) => {
         Editor: req.body.Editor,
         CacheExpired: req.body.CacheExpired,
         TranslateKey: req.body.TranslateKey,
-        EnableShare: req.body.EnableShare,
-        JiaThisId: req.body.JiaThisId,
         ShowComments: req.body.ShowComments,
         ShowGuestbook: req.body.ShowGuestbook,
         ChangyanId: req.body.ChangyanId,

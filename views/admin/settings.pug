@@ -43,7 +43,7 @@ block content
                                                             | #{__("admin.settings.logo")}
                                                         .pull-right
                                                             span.fileinput-button
-                                                                img.img-circle.profile-img(alt='profile', src=settings.LogoPath, style='width:146px;height:146px;')
+                                                                img.profile-img(alt='profile', src=settings.LogoPath, style='width:auto;height:auto;max-width:146px;max-height:146px;')
                                                                 input.fileupload(type='file', name='file')
                                                                 input#LogoPath(type='hidden', name='LogoPath', value=settings.LogoPath)
                                                     li.list-group-item.clearfix
@@ -132,32 +132,6 @@ block content
                                                             | #{__("admin.settings.key")}
                                                         .pull-right
                                                             input#TranslateKey.form-control(type='text', name='TranslateKey', placeholder=__("admin.settings.key_placeholder"), value=settings.TranslateKey)
-                                                    li.list-group-item.clearfix
-                                                        .pull-left
-                                                            | #{__("admin.settings.analysis")} (
-                                                            a(href='http://tongji.baidu.com', target='_blank')=__("admin.settings.analysis_service")
-                                                            | )
-                                                        .pull-right
-                                                            input#EnableStatistics(type='hidden', name='EnableStatistics', value=settings.EnableStatistics)
-                                                            input.js-switch(type='checkbox', checked=settings.EnableStatistics === 'true')
-                                                    li.list-group-item.clearfix
-                                                        .pull-left
-                                                            | #{__("admin.settings.analysis_id")}
-                                                        .pull-right
-                                                            input#StatisticsId.form-control(type='text', name='StatisticsId', placeholder=__("admin.settings.analysis_id_placeholder"), value=settings.StatisticsId)
-                                                    li.list-group-item.clearfix
-                                                        .pull-left
-                                                            | #{__("admin.settings.share")}(
-                                                            a(href='http://www.jiathis.com/', target='_blank')=__("admin.settings.share_service")
-                                                            | )
-                                                        .pull-right
-                                                            input#EnableShare(type='hidden', name='EnableShare', value=settings.EnableShare)
-                                                            input.js-switch(type='checkbox', checked=settings.EnableShare === 'true')
-                                                    li.list-group-item.clearfix
-                                                        .pull-left
-                                                            | #{__("admin.settings.share_id")}
-                                                        .pull-right
-                                                            input#JiaThisId.form-control(type='text', name='JiaThisId', placeholder=__("admin.settings.share_id_placeholder"), value=settings.JiaThisId)
                                                     li.list-group-item.clearfix
                                                         .pull-left
                                                             | #{__("admin.settings.comments")} (
