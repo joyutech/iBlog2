@@ -22,18 +22,19 @@
         return "<a href=\"" + this.src + "\" data-lightbox=\"" + i + "\"></a>"
     });
 
-    // 正常目录
-    $("#main-context").scrollNav({
-        sections: "h2",  //一级目录的元素
-        subSections: "h3",  //二级目录的元素
-        showHeadline: true,
-        headlineText: "文章目录",
-        showTopLink: false,
-        scrollOffset: 70,
-        arrowKeys: true,
-        insertTarget: "#control-wrap",
-        insertLocation: "prependTo"
-    });
+    setTimeout(function() {
+        $("#main-context").scrollNav({
+            sections: "h2",  //一级目录的元素
+            subSections: "h3",  //二级目录的元素
+            showHeadline: true,
+            headlineText: "文章目录",
+            showTopLink: false,
+            scrollOffset: 80,
+            arrowKeys: true,
+            insertTarget: "#control-wrap",
+            insertLocation: "prependTo"
+        });
+    }, 100);
 
     //收起目录
     $(".close-menu").on("click", function () {
