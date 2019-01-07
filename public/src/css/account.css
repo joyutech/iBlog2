@@ -1,5 +1,5 @@
 ﻿.login-block {
-    margin-top: 130px;
+    margin-top: 120px;
 }
 
     .login-block .login-wrap {
@@ -36,7 +36,7 @@
 }
 
 #progress-back {
-    top: 70px;
+    top: 232px;
 }
 
 @-webkit-keyframes fadeInDownSmall {
